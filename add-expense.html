@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Expense - Personal Finance</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Add Income/Expense</h1>
+            <p>Enter the details of your transaction below.</p>
+        </header>
+
+        <!-- Form to add income or expense -->
+        <section class="form-section">
+            <form id="transactionForm">
+                <label for="type">Transaction Type</label>
+                <select id="type" required>
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+
+                <label for="description">Description</label>
+                <input type="text" id="description" placeholder="Enter description" required>
+
+                <label for="amount">Amount ($)</label>
+                <input type="number" id="amount" placeholder="Enter amount" required>
+
+                <button type="submit" class="btn">Add Transaction</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="add-expense.html" class="active">Add Expense</a></li>
+            <li><a href="transactions.html">Transactions</a></li>
+            <li><a href="budget.html">Budget</a></li>
+            <li><a href="goals.html">Goals</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="advanced-reports.html">Advanced-Reports</a></li>
+        </ul>
+    </nav>
+<script src="js/theme.js"></script>
+    <script src="js/add-expense.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Reports</title>
+  <link rel="stylesheet" href="css/advanced-reports.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Advanced Reports</h1>
+  </header>
+
+  <div class="container">
+    <h2>Filter & Analyze</h2>
+    
+    <div class="filters">
+      <label for="filter-type">Type:</label>
+      <select id="filter-type">
+        <option value="all">All</option>
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+
+      <label for="filter-category">Category:</label>
+      <select id="filter-category">
+        <option value="all">All</option>
+        <option value="food">Food</option>
+        <option value="transport">Transport</option>
+        <option value="bills">Bills</option>
+        <option value="entertainment">Entertainment</option>
+        <option value="health">Health</option>
+      </select>
+
+      <label for="filter-date">Date:</label>
+      <input type="month" id="filter-date" />
+      
+      <button onclick="applyFilters()">Apply</button>
+    </div>
+
+    <div class="summary-boxes">
+      <div class="summary-box">
+        <h3>Total Income</h3>
+        <p id="total-income">₹0</p>
+      </div>
+      <div class="summary-box">
+        <h3>Total Expense</h3>
+        <p id="total-expense">₹0</p>
+      </div>
+      <div class="summary-box">
+        <h3>Net Balance</h3>
+        <p id="net-balance">₹0</p>
+      </div>
+    </div>
+
+    <div class="chart-container">
+      <canvas id="reportChart" height="100"></canvas>
+    </div>
+  </div>
+   <nav class="bottom-nav">
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="add-expense.html">Add Expense</a></li>
+      <li><a href="transactions.html">Transactions</a></li>
+      <li><a href="budget.html">Budget</a></li>
+      <li><a href="goals.html" class="active">Goals</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="advanced-reports.html">Advanced-Reports</a></li>
+    </ul>
+  </nav>
+<script src="js/theme.js"></script>
+  <script src="js/advanced-reports.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Personal Finance</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Personal Finance Dashboard</h1>
+            <p>Track your income, expenses, and balance here.</p>
+        </header>
+
+        <!-- Financial Stats Section -->
+        <section class="stats">
+            <div class="card">
+                <h3>Total Income</h3>
+                <p id="income">$0.00</p>
+            </div>
+            <div class="card">
+                <h3>Total Expenses</h3>
+                <p id="expenses">$0.00</p>
+            </div>
+            <div class="card">
+                <h3>Balance</h3>
+                <p id="balance">$0.00</p>
+            </div>
+        </section>
+
+        <!-- Buttons for Adding Income and Expenses -->
+        <div class="actions">
+            <button class="btn" id="addIncomeBtn">Add Income</button>
+            <button class="btn" id="addExpenseBtn">Add Expense</button>
+        </div>
+    </div>
+<button id="themeToggle" class="theme-btn">
+    <span id="themeIcon">🌙</span> Toggle Theme
+</button>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <ul>
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="add-expense.html">Add Expense</a></li>
+            <li><a href="transactions.html">Transactions</a></li>
+            <li><a href="budget.html">Budget</a></li>
+            <li><a href="goals.html">Goals</a></li>
+            <li><a href="reports.html">Reports</a></li>
+             <li><a href="advanced-reports.html">Advanced-Reports</a></li>
+        </ul>
+    </nav>
+   
+
+    <script src="js/dashboard.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/voiceInput.js"></script>
+
+    <!-- Notes Section -->
+<section class="notes-section">
+    <h2>Notes</h2>
+    <textarea id="noteInput" placeholder="Write your note here..." rows="5"></textarea>
+    <button id="voiceInputBtn" class="voice-input-btn">
+        🎤 Start Recording
+    </button>
+    <p id="transcriptionResult"></p> <!-- Display Transcription Here -->
+</section>
+
+
+</body>
+</html>
